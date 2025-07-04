@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foto ajustavel</title>
+</head>
+<body>
+    <h1>Imagems podem se ajustar</h1>
+    <p>Ajustando foto</p>
+<picture>
+    <source media="(max-width: 200pix)" srcset="foto/imagem-p.png" type="image/png">
+    <source media="(max-width: 1000px)" srcset="foto/imagem-m.png" type="image/png">
+    <img src="foto/imagem-g.png" alt="A imagem flexível">
+</picture>
+</body>
+</html>

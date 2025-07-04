@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+
+        /*Seletores personalizados
+        # = id
+        . = class
+        : = pseudo-class
+        :: = pseudo-elemento
+        > = clildren
+        */
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a {
+            color: #fe0606; /* cor do link*/
+            text-decoration: none; /*sem o sublinhado*/
+            font-weight: bold; /*letra negrito*/
+        }
+        a:visited {
+            color: #870303; /*quando visitado muda de cor*/
+        }
+        a:hover {
+            color: #ed2c2c;  /*quando passar o mouse as letras fica preta*/
+            text-decoration: underline; /*quando passar o mouse aparecer a linha*/
+        }
+        a:active {
+            color: green; /*na hora que clica aparece o verde*/
+        }
+
+        .especial {
+            background-color: #000; /*o fundo fica preto na class especial*/
+        }
+
+        .especial::before { /*vai aparecer só na class especial*/
+            content: '⮞'; /*Antes da palavra*/
+        }
+
+        .especial::after { /*vai aparecer só na class especial*/
+            content: '⮜'; /*depois da palavra*/
+         
+        }
+    </style>
+</head>
+<body>
+    <h1>Personaliasando links</h1>
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blank" class="especial">YouTube</a></li>
+        <li><a href="http://www-db.deis.unibo.it/courses/TW/DOCS/w3schools/cssref/css_websafe_fonts.asp.html#gsc.tab=0" target="_blank" class="especial">W3schools</a></li>
+        <li><a href="https://www.equatorialenergia.com.br/" target="_blank">Equatorial</a></li>
+    </ul>
+</body>
+</html>
