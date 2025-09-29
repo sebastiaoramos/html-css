@@ -12,6 +12,22 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+            /* Efeito Zebrado */
+        tbody > tr:nth-child(odd) { /* 2n-1 > impa*/
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even) { /* 2n > par*/
+            background-color: lightgray;
         }
 
         td, th {
@@ -20,11 +36,17 @@
         }
 
         thead {
-            background-color: gray;
+            background-color: rgb(21, 20, 20);
             color: white;
         }
+            /*Cabeçalho da tabela fixo */
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(21, 20, 20);
+        }
         tfoot {
-            background-color: gray;
+            background-color: rgb(21, 20, 20);
             color: white;
         }
 
@@ -38,6 +60,7 @@
     <h1>Uso de tabelas grandes</h1>
     <!--ANATOMIA PARA TABELAS GRANDES
     TABLE
+        CAPITON
         THEAD
             TR, TD, TH
         TBODY
@@ -46,10 +69,11 @@
             TR, TD, TH
         -->
     <Table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -164,10 +188,21 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>213 421 037</strong></td>
             </tr>
         </tfoot>
     </Table>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti maxime nihil sed a nesciunt voluptas mollitia deleniti ipsum! Ut omnis, ullam laboriosam saepe voluptatum accusamus quisquam minima fuga magni quod.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto consectetur autem necessitatibus. Corporis accusantium voluptates illum deleniti maiores amet magnam, molestias ipsam placeat distinctio, doloremque officia, tempora necessitatibus tempore excepturi!</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi iste voluptatem nulla fugit fugiat quas beatae dicta quam temporibus voluptatibus minima quia, quo provident ab aspernatur ut aperiam ipsum. Praesentium.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo nihil ducimus qui maxime enim tempora possimus, voluptatum quidem dignissimos repellendus magni repellat. Similique iusto blanditiis ullam aut dolores ipsa doloremque!</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa impedit id provident fugiat cupiditate recusandae accusamus, dolorem earum aut corporis dolor hic, nisi quas tempore voluptate quod facere in exercitationem.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam doloribus totam molestiae reiciendis tempore libero amet eaque et. Architecto recusandae vero dolorem placeat doloremque. Quisquam voluptatibus suscipit fugiat sit laborum?</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut deserunt maiores harum eos rem laborum, excepturi, quo totam ullam ab dolorum, distinctio id. Atque magnam, molestias et voluptates quasi libero.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis accusamus iure rem doloribus. Qui eveniet consequatur, quibusdam accusamus eius laboriosam, perferendis dolorem magnam totam aperiam debitis, laudantium sint eligendi a.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat hic necessitatibus cum? Necessitatibus explicabo illo deserunt nisi optio, incidunt fugit quo consequuntur ad in vero dolorum possimus. Reprehenderit, ipsa esse!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta quidem assumenda, minus velit eligendi delectus, provident porro repellat pariatur ea quas unde mollitia rerum optio voluptate aliquam. Dolore, aspernatur! Cumque.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus sint officiis, quidem cum neque aliquam nobis ea at aut, dicta, dolorum porro reiciendis doloremque! Natus, similique? Natus error vero sit?</p>
 </body>
 </html>
