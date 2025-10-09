@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SR DESIGNER</title>
+    <style>
+        /* Importando uma fonte moderna do Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+        /* --- Estilos Gerais --- */
+        :root {
+            --cor-primaria: #0d6efd; /* Azul vibrante para destaque */
+            --cor-fundo: #f8f9fa; /* Fundo cinza claro */
+            --cor-texto-principal: #212529; /* Grafite escuro para texto */
+            --cor-texto-secundario: #495057; /* Grafite mais claro */
+            --cor-header: #343a40; /* Fundo escuro para o cabeçalho */
+            --sombra-caixa: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor-fundo);
+            color: var(--cor-texto-principal);
+            line-height: 1.7;
+        }
+
+        /* --- Container Principal --- */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* --- Cabeçalho (Header) --- */
+        header {
+            background: linear-gradient(135deg, #2c3e50, var(--cor-header));
+            color: #ffffff;
+            text-align: center;
+            padding: 4rem 2rem;
+            border-bottom: 5px solid var(--cor-primaria);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin: 0;
+            font-weight: 700;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        /* --- Seção de Boas-Vindas --- */
+        .welcome {
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        .welcome p {
+            font-size: 1.1rem;
+            max-width: 750px;
+            margin: 1rem auto;
+            color: var(--cor-texto-secundario);
+        }
+
+        /* --- Seção de Serviços --- */
+        .services {
+            background-color: #ffffff;
+            padding: 3rem;
+            border-radius: 12px;
+            box-shadow: var(--sombra-caixa);
+        }
+
+        .services h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 2.5rem;
+            color: var(--cor-texto-principal);
+            position: relative;
+        }
+
+        /* Linha decorativa abaixo do título "O que eu faço" */
+        .services h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--cor-primaria);
+            border-radius: 2px;
+            margin: 0.5rem auto 0;
+        }
+
+        .services ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .services li {
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            background-color: var(--cor-fundo);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .services li:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--sombra-caixa);
+        }
+
+        /* Ícone antes de cada item da lista */
+        .services li::before {
+            content: '✓'; /* Você pode trocar por outros ícones como '✔', '►', '•' */
+            font-size: 1.5rem;
+            color: var(--cor-primaria);
+            margin-right: 1.2rem;
+            font-weight: 600;
+        }
+
+        /* --- Rodapé --- */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        /* --- Responsividade para Dispositivos Móveis --- */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            .container {
+                padding: 1.5rem;
+            }
+
+            .services {
+                padding: 2rem;
+            }
+
+            .services h2 {
+                font-size: 1.8rem;
+            }
+
+            .services li {
+                padding: 1rem;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🎨 Transforme ideias em experiências visuais inesquecíveis</h1>
+    </header>
+
+    <main class="container">
+        <section class="welcome">
+            <p>
+                Seja bem-vindo ao meu estúdio de design, onde cada pixel conta uma história. Aqui, criatividade encontra estratégia para criar marcas memoráveis, interfaces intuitivas e soluções visuais que encantam e convertem.
+            </p>
+        </section>
+
+        <section class="services">
+            <h2>✨ O que eu faço:</h2>
+            <ul>
+                <li>Identidade visual que transmite propósito</li>
+                <li>Cartazes para eventos</li>
+                <li>Materiais gráficos para campanhas e redes sociais</li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 SRdesigner. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>

@@ -4,8 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>desafio13 parte2</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            background-color: rgba(0, 0, 0, 0.664);
+            color: rgb(252, 249, 249);
+            text-align: center;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: normal;
+            text-transform: uppercase;
+         
+        }
+        table {
+            width: 100%;
+        }
+
+        td {
+            background-color: rgb(6, 142, 96);
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            color: #ffffff;
+            font-weight: bold;
+        }
+        
+        .cor {
+            background-color: rgb(2, 53, 53);
+            color: #ffffff;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Tabela parte 2</h1>
+    <table>
+        <tr>
+            <td colspan="4" class="cor">A</td>
+            <td rowspan="4" class="cor">B</td>
+        </tr>
+
+        <tr>
+            <td rowspan="4" class="cor">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+
+        <tr>
+            <td colspan="4" class="cor">N</td>
+        </tr>
+    </table>
 </body>
 </html>
